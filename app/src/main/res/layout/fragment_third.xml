@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ThirdFragment">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:weightSum="12"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:orientation="vertical"
+               android:weightSum="7">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="3">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:text="Drinking Water Source and its distance from house:"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="4">
+                   <RadioGroup
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal">
+
+                       <RadioButton
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:text="Yes" />
+
+                       <RadioButton
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:text="No" />
+                   </RadioGroup>
+               </LinearLayout>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="2"
+               android:orientation="vertical"
+               android:weightSum="8">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="2">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:text="Which of the following does the family own:"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="5"
+                   android:orientation="vertical"
+                   android:weightSum="2">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="1"
+                       android:weightSum="3">
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1">
+                           <CheckBox
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Television" />
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1">
+                           <CheckBox
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Smart phone" />
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1">
+                           <CheckBox
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Refrigerator" />
+                       </LinearLayout>
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="1"
+                       android:weightSum="4">
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1">
+                           <CheckBox
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Electricity" />
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1">
+                           <CheckBox
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="LPG" />
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1">
+                           <CheckBox
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Bike" />
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1">
+                           <CheckBox
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Car" />
+                       </LinearLayout>
+                   </LinearLayout>
+               </LinearLayout>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="2"
+               android:orientation="vertical"
+               android:weightSum="8">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="2">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:text="Where does family members go for medical issue:"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="5"
+                   android:orientation="vertical"
+                   android:weightSum="2">
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="1"
+                       android:weightSum="2">
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1">
+                           <CheckBox
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Local Medical Store" />
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1">
+                           <CheckBox
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="PHC" />
+                       </LinearLayout>
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="1"
+                       android:weightSum="2">
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1">
+                           <CheckBox
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Pvt Hospitals/Doctors" />
+                       </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="0dp"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1">
+                           <CheckBox
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:text="Distt. HQ" />
+                       </LinearLayout>
+                   </LinearLayout>
+               </LinearLayout>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:orientation="vertical"
+               android:weightSum="7">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="3">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:text="House Type:"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="4">
+                   <RadioGroup
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal">
+
+                       <RadioButton
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:text="Hut" />
+
+                       <RadioButton
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:text="Mud-house" />
+
+                       <RadioButton
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:text="Pucca" />
+                   </RadioGroup>
+               </LinearLayout>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:orientation="vertical"
+               android:weightSum="7">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="3">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:text="Does the family has cattle:"/>
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="4">
+                   <RadioGroup
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal">
+
+                       <RadioButton
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:text="Yes" />
+
+                       <RadioButton
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_weight="3"
+                           android:text="No" />
+                   </RadioGroup>
+               </LinearLayout>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_marginStart="17sp"
+               android:layout_marginEnd="17sp"
+               android:layout_weight="1">
+
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentStart="true"
+                       android:layout_alignParentTop="true"
+                       android:layout_gravity="center"
+                       android:layout_marginStart="7dp"
+                       android:layout_marginTop="12dp"
+                       android:text="Children's Info"
+                       android:textSize="20sp" />
+               </RelativeLayout>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_marginStart="15sp"
+               android:layout_marginTop="5sp"
+               android:layout_marginBottom="5sp"
+               android:layout_marginEnd="15sp"
+               android:layout_weight="5"
+               android:weightSum="5"
+               android:orientation="vertical">
+
+               <TableLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:stretchColumns="1">
+
+                   <TableRow>
+
+                       <TextView
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:text="Sl No."
+                           android:textSize="20sp" />
+
+                       <TextView
+                           android:layout_width="151dp"
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:text="Name"
+                           android:textSize="20sp" />
+
+                       <TextView
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:text="DOB"
+                           android:textSize="20sp" />
+
+                       <TextView
+                           android:layout_width="56dp"
+                           android:padding="5dp"
+                           android:text="Edu"
+                           android:textSize="20sp" />
+
+                       <TextView
+                           android:layout_width="68dp"
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:text="Prof"
+                           android:textSize="20sp" />
+                   </TableRow>
+
+                   <TableRow>
+
+                       <TextView
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:text="1."
+                           android:textSize="20sp" />
+
+                       <EditText
+                           android:layout_width="151dp"
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:textSize="20sp" />
+
+                       <EditText
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:textSize="20sp" />
+
+                       <EditText
+                           android:layout_width="56dp"
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:textSize="20sp" />
+
+                       <EditText
+                           android:layout_width="68dp"
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:textSize="20sp" />
+                   </TableRow>
+
+                   <TableRow>
+
+                       <TextView
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:text="2."
+                           android:textSize="20sp" />
+
+                       <EditText
+                           android:layout_width="151dp"
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:textSize="20sp" />
+
+                       <EditText
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:textSize="20sp" />
+
+                       <EditText
+                           android:layout_width="56dp"
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:textSize="20sp" />
+
+                       <EditText
+                           android:layout_width="68dp"
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:textSize="20sp" />
+                   </TableRow>
+
+                   <TableRow>
+
+                       <TextView
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:text="3."
+                           android:textSize="20sp" />
+
+
+                       <EditText
+                           android:layout_width="151dp"
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:textSize="20sp" />
+
+                       <EditText
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:textSize="20sp" />
+
+                       <EditText
+                           android:layout_width="56dp"
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:textSize="20sp" />
+
+                       <EditText
+                           android:layout_width="68dp"
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:textSize="20sp" />
+                   </TableRow>
+
+                   <TableRow>
+
+                       <TextView
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:text="4."
+                           android:textSize="20sp" />
+
+                       <EditText
+                           android:layout_width="151dp"
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:textSize="20sp" />
+
+                       <EditText
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:textSize="20sp" />
+
+                       <EditText
+                           android:layout_width="56dp"
+                           android:padding="5dp"
+                           android:textSize="20sp" />
+
+                       <EditText
+                           android:layout_width="68dp"
+                           android:layout_height="match_parent"
+                           android:padding="5dp"
+                           android:textSize="20sp" />
+                   </TableRow>
+               </TableLayout>
+           </LinearLayout>
+       </LinearLayout>
+   </RelativeLayout>
+</FrameLayout>
