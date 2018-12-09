@@ -146,10 +146,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_marginStart="15sp"
-                    android:layout_marginTop="5sp"
-                    android:layout_marginEnd="15sp"
-                    android:layout_marginBottom="5sp"
                     android:layout_weight="5">
 
                     <TableLayout
@@ -391,6 +387,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
+                                android:textSize="11sp"
                                 android:text="Handpump" />
 
                             <RadioButton
