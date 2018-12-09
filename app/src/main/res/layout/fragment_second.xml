@@ -8,25 +8,123 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <LinearLayout
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:orientation="vertical"
-            android:weightSum="13">
-
+            android:elevation="30sp">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:weightSum="10">
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:padding="5sp"
+                android:orientation="vertical"
+                android:weightSum="13">
 
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="4">
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="GENDER"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:text="Male" />
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:text="Female" />
+                            </RadioGroup>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Age"
+                            android:inputType="number" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Educational Qualification"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Number of family members"
+                            android:inputType="number" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -38,21 +136,245 @@
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
                             android:layout_gravity="center"
-                            android:layout_marginStart="40dp"
-                            android:layout_marginTop="19dp"
-                            android:text="GENDER"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="12dp"
+                            android:text="Children's Info"
                             android:textSize="20sp" />
                     </RelativeLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="6">
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginEnd="15sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_weight="5">
 
-                    <RelativeLayout
+                    <TableLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="1">
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:text="Sl No."
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="151dp"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:text="Name"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:text="DOB"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="56dp"
+                                android:padding="5dp"
+                                android:text="Edu"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="68dp"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:text="Prof"
+                                android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:text="1."
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_width="151dp"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_width="56dp"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_width="68dp"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:text="2."
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_width="151dp"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_width="56dp"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_width="68dp"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:text="3."
+                                android:textSize="20sp" />
+
+
+                            <EditText
+                                android:layout_width="151dp"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_width="56dp"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_width="68dp"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:text="4."
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_width="151dp"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_width="56dp"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_width="68dp"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:text="5."
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_width="151dp"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_width="56dp"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+
+                            <EditText
+                                android:layout_width="68dp"
+                                android:layout_height="match_parent"
+                                android:padding="5dp"
+                                android:textSize="20sp" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="7">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Drinking water source and its distancee from house:" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4">
 
                         <RadioGroup
                             android:layout_width="match_parent"
@@ -63,364 +385,31 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
-                                android:text="Male" />
+                                android:text="Supply" />
 
                             <RadioButton
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="3"
-                                android:text="Female" />
+                                android:text="Handpump" />
+
+                            <RadioButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:text="Dug-well" />
+
+                            <RadioButton
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:text="Others" />
                         </RadioGroup>
-                    </RelativeLayout>
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginStart="17sp"
-                android:layout_marginEnd="17sp"
-                android:layout_weight="1">
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:hint="Age"
-                        android:inputType="number" />
-                </android.support.design.widget.TextInputLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginStart="17sp"
-                android:layout_marginEnd="17sp"
-                android:layout_weight="1">
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:hint="Educational Qualification"
-                        android:inputType="text" />
-                </android.support.design.widget.TextInputLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginStart="17sp"
-                android:layout_marginEnd="17sp"
-                android:layout_weight="1">
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:hint="Number of family members"
-                        android:inputType="number" />
-                </android.support.design.widget.TextInputLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginStart="17sp"
-                android:layout_marginEnd="17sp"
-                android:layout_weight="1">
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentTop="true"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="7dp"
-                        android:layout_marginTop="12dp"
-                        android:text="Children's Info"
-                        android:textSize="20sp" />
-                </RelativeLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginStart="15sp"
-                android:layout_marginTop="5sp"
-                android:layout_marginEnd="15sp"
-                android:layout_marginBottom="5sp"
-                android:layout_weight="5">
-
-                <TableLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:stretchColumns="1">
-
-                    <TableRow>
-
-                        <TextView
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:text="Sl No."
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="151dp"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:text="Name"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:text="DOB"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="56dp"
-                            android:padding="5dp"
-                            android:text="Edu"
-                            android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="68dp"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:text="Prof"
-                            android:textSize="20sp" />
-                    </TableRow>
-
-                    <TableRow>
-
-                        <TextView
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:text="1."
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_width="151dp"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_width="56dp"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_width="68dp"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-                    </TableRow>
-
-                    <TableRow>
-
-                        <TextView
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:text="2."
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_width="151dp"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_width="56dp"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_width="68dp"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-                    </TableRow>
-
-                    <TableRow>
-
-                        <TextView
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:text="3."
-                            android:textSize="20sp" />
-
-
-                        <EditText
-                            android:layout_width="151dp"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_width="56dp"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_width="68dp"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-                    </TableRow>
-
-                    <TableRow>
-
-                        <TextView
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:text="4."
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_width="151dp"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_width="56dp"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_width="68dp"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-                    </TableRow>
-
-                    <TableRow>
-
-                        <TextView
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:text="5."
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_width="151dp"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_width="56dp"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-
-                        <EditText
-                            android:layout_width="68dp"
-                            android:layout_height="match_parent"
-                            android:padding="5dp"
-                            android:textSize="20sp" />
-                    </TableRow>
-                </TableLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:weightSum="7">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="3">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="House Type:" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="4">
-
-                    <RadioGroup
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <RadioButton
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="3"
-                            android:text="Hut" />
-
-                        <RadioButton
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="3"
-                            android:text="Mud-house" />
-
-                        <RadioButton
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="3"
-                            android:text="Pucca" />
-
-                        <RadioButton
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="3"
-                            android:text="Pucca" />
-                    </RadioGroup>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
+        </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/second_fragment_next_btn"
