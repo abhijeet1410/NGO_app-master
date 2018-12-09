@@ -364,7 +364,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="Drinking water source and its distancee from house:" />
+                            android:text="Drinking water source and its distance from house:" />
                     </LinearLayout>
 
                     <LinearLayout
